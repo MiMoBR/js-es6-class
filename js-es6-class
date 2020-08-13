@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+
+</body>
+  <script>
+    // to have a class we need array, innitialse and constructor
+    class myClass{
+      //our constructor
+      constructor(){
+        // create our object to carry data
+        this.data = {};
+        // declare and assign a 
+        this.length = 0;
+      }
+      // method 1 push
+      push(item){
+        this.data[this.length]=item;
+        this.length++;
+      }
+      // method 2 pop
+      pop(){
+        const item = this.data[this.length-1];
+        delete this.data[this.length-1]
+        this.length-1;
+        return item;
+      }
+      // method 3 pop
+      get(index){
+        return this.data[index];
+      }
+    }
+    
+    const arr = new myClass();
+    arr.push("an element");
+    arr.push("another element");
+    arr.push("third element");
+    arr.pop;
+    
+    console.table(arr.get(1));
+    console.log(arr);
+    console.table(arr);
+
+    
+    
+  </script>
+</html>
